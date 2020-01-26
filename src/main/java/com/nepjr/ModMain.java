@@ -14,6 +14,7 @@ public class ModMain
     public static final String MODID = "nepstuff";
     public static final String NAME = "Nep Stuff";
     public static final String VERSION = "1.0-rv1";
+    public static final String LOGMODID = "[NepStuff " + VERSION + "] ";
 
     private static Logger logger;
 
@@ -21,16 +22,18 @@ public class ModMain
     public void preInit(FMLPreInitializationEvent event)
     {
         logger = event.getModLog();
+        System.out.println(LOGMODID + "PreInitialization starting...");
     }
 
     @EventHandler
     public void init(FMLInitializationEvent event)
     {
-    	
+    	System.out.println(LOGMODID + "Initialization starting...");
     }
     
     @EventHandler
-    public void postInit(FMLPostInitializationEvent event) {
-    	
+    public void postInit(FMLPostInitializationEvent event) 
+    {
+    	System.out.println(LOGMODID + "PostInitialization starting...");
     }
 }

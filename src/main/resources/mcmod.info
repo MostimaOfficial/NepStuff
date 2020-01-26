@@ -1,14 +1,14 @@
 [
 {
-  "modid": "examplemod",
-  "name": "Example Mod",
+  "modid": "nepstuff",
+  "name": "Nep Stuff",
   "description": "Example placeholder mod.",
   "version": "${version}",
   "mcversion": "${mcversion}",
   "url": "",
   "updateUrl": "",
-  "authorList": ["ExampleDude"],
-  "credits": "The Forge and FML guys, for making this example",
+  "authorList": ["NepJr"],
+  "credits": "Myself, for doing things",
   "logoFile": "",
   "screenshots": [],
   "dependencies": []
