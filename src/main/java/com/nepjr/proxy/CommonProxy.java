@@ -23,14 +23,4 @@ public class CommonProxy {
 
     public void postInit(FMLPostInitializationEvent e) {
     }
-
-    @SubscribeEvent
-    public static void registerBlocks(RegistryEvent.Register<Block> event) {
-    	event.getRegistry().register(new BlockInvalid());
-    }
-
-    @SubscribeEvent
-    public static void registerItems(RegistryEvent.Register<Item> event) {
-    	event.getRegistry().register(new ItemBlock(BlockLib.blockInvalid).setRegistryName(BlockLib.blockInvalid.getRegistryName()));
-    }
 }

@@ -9,6 +9,7 @@ import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import org.apache.logging.log4j.Logger;
 
+import com.nepjr.lib.BlockLib;
 import com.nepjr.proxy.CommonProxy;
 
 @Mod(modid = ModMain.MODID, name = ModMain.NAME, version = ModMain.VERSION)
@@ -33,6 +34,7 @@ public class ModMain
         logger = event.getModLog();
         System.out.println(LOGMODID + "PreInitialization starting...");
         proxy.preInit(event);
+        BlockLib.init();
     }
 
     @EventHandler
