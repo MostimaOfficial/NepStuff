@@ -1,5 +1,5 @@
 git add .
 set /p commit= What commit was made?
 git commit -m "%commit%"
-git push origin master
+git push -f origin master
 PAUSE
