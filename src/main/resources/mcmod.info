@@ -1,0 +1,16 @@
+[
+{
+  "modid": "nepstuff",
+  "name": "Nep Stuff",
+  "description": "Example placeholder mod.",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["NepJr"],
+  "credits": "Myself, for doing things",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
