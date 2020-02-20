@@ -28,7 +28,15 @@ public class GuiHandler implements IGuiHandler {
 
 	@Override
 	public Object getClientGuiElement(int ID, EntityPlayer player, World world, int x, int y, int z) {
-		return null;
+		
+		BlockPos pos = new BlockPos(x, y, z);
+		TileEntity tile = world.getTileEntity(pos);
+		switch (ID) {
+		case 0: 
+			return new GuiGeneratorDiamond(player.inventory, ((TileEntityGeneratorDiamond) tile));
+		default:
+			return null;
+		}
 	}
 
 }

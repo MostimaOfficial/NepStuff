@@ -30,7 +30,7 @@ public class GuiGeneratorDiamond extends GuiMachineBase<TileEntityGeneratorDiamo
     @Override
     protected void drawGuiContainerForegroundLayer(int mouseX, int mouseY) {
 
-        String s = I18n.format("container.neutron_collector");
+        String s = I18n.format("container.diamond_generator");
         float scaled_progress = scaleF(machineTile.getProgress(), TileEntityGeneratorDiamond.PRODUCTION_TICKS, 100);
         String progress = "Progress: " + MathHelper.round(scaled_progress, 10) + "%";
 

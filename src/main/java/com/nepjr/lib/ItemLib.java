@@ -2,6 +2,7 @@ package com.nepjr.lib;
 
 import com.nepjr.ModMain;
 import com.nepjr.items.ItemInfinityCoal;
+import com.nepjr.items.ItemSpeedUpgrade;
 
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.item.Item;
@@ -18,20 +19,23 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 public class ItemLib {
 	
 	public static Item iCoal;
+	public static Item upgradeSpeed;
 	
 	public static void init() {
 		iCoal = new ItemInfinityCoal("infinity_coal");
+		upgradeSpeed = new ItemSpeedUpgrade("speed_upgrade");
 	}
 	
 	@SubscribeEvent
 	public static void registerItem(RegistryEvent.Register<Item> event) {
 		event.getRegistry().registerAll(iCoal);
-		
+		event.getRegistry().registerAll(upgradeSpeed);
 	}
 	
 	@SubscribeEvent
 	public static void registerRenders(ModelRegistryEvent event) {
 		registerRender(iCoal);
+		registerRender(upgradeSpeed);
 	}
 	
 	private static void registerRender(Item item) {

@@ -28,7 +28,7 @@ public class BlockDiamondGen extends BlockContainer {
         if (world.isRemote) {
             return true;
         } else {
-            player.openGui(ModMain.instance, 2, world, pos.getX(), pos.getY(), pos.getZ());
+            player.openGui(ModMain.instance, 0, world, pos.getX(), pos.getY(), pos.getZ());
             return true;
         }
     }
